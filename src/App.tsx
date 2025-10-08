@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import { useAppSelector } from "./redux/hooks";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
   const cartItems = useAppSelector((state) => state.cart.items);
@@ -22,7 +23,7 @@ const App = () => {
 
         <div className="flex items-center space-x-6 relative">
           <NavLink
-            to="/digitalinkk/"
+            to="/digitalinkk/store"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
           >
           
@@ -30,7 +31,7 @@ const App = () => {
           </NavLink>
 
           <NavLink
-            to="/cart"
+            to="/digitalinkk/cart"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
           >
             <div className="relative flex items-center">
@@ -49,9 +50,10 @@ const App = () => {
       {/* Routes */}
       <div className="p-4">
         <Routes>
-          <Route path="/digitalinkk/" element={<HomePage />} />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path= "/digitalinkk" element={<LandingPage/>}/>
+          <Route path="/digitalinkk/store" element={<HomePage />} />
+          <Route path="/digitalinkk/cart" element={<CartPage />} />
+          <Route path="/digitalinkk/checkout" element={<CheckoutPage />} />
         </Routes>
       </div>
     </Router>
