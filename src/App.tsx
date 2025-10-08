@@ -51,7 +51,7 @@ const App = () => {
         <Routes>
           <Route path="/digitalinkk" element={<HomePage />} />
           <Route path="/cart" element={<CartPage />} />
-          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/digitalinkk/checkout" element={<CheckoutPage />} />
         </Routes>
       </div>
     </Router>
