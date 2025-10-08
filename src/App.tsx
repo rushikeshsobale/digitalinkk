@@ -22,7 +22,7 @@ const App = () => {
 
         <div className="flex items-center space-x-6 relative">
           <NavLink
-            to="/digitalinkk"
+            to="/"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
           >
           
@@ -30,7 +30,7 @@ const App = () => {
           </NavLink>
 
           <NavLink
-            to="/digitalinkk/cart"
+            to="/cart"
             className={({ isActive }) => (isActive ? activeClass : inactiveClass)}
           >
             <div className="relative flex items-center">
@@ -49,9 +49,9 @@ const App = () => {
       {/* Routes */}
       <div className="p-4">
         <Routes>
-          <Route path="digitalinkk/" element={<HomePage />} />
-          <Route path="digitalinkkk/cart" element={<CartPage />} />
-          <Route path="digitalinkk/checkout" element={<CheckoutPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </div>
     </Router>
