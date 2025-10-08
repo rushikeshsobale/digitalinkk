@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rushikeshsobale/digitalinkk.git/static/css/main.bd2ab6f2.css",
+    "main.js": "/rushikeshsobale/digitalinkk.git/static/js/main.4ef9d5e2.js",
+    "static/js/453.f7bd3047.chunk.js": "/rushikeshsobale/digitalinkk.git/static/js/453.f7bd3047.chunk.js",
+    "index.html": "/rushikeshsobale/digitalinkk.git/index.html",
+    "main.bd2ab6f2.css.map": "/rushikeshsobale/digitalinkk.git/static/css/main.bd2ab6f2.css.map",
+    "main.4ef9d5e2.js.map": "/rushikeshsobale/digitalinkk.git/static/js/main.4ef9d5e2.js.map",
+    "453.f7bd3047.chunk.js.map": "/rushikeshsobale/digitalinkk.git/static/js/453.f7bd3047.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd2ab6f2.css",
+    "static/js/main.4ef9d5e2.js"
+  ]
+}
