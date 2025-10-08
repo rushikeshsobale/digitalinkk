@@ -89,7 +89,7 @@ const navigate = useNavigate()
         <span>₹ {total.toFixed(2)}</span>
       </div>
 
-      <button className="mt-4 w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition"  onClick={() => navigate("/digitalinkk/checkout")}>
+      <button className="mt-4 w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition"  onClick={() => navigate("/checkout")}>
         Proceed to Checkout
       </button>
     </div>
