@@ -1,20 +1,18 @@
-// src/components/CartSummary.tsx
+
 import React from "react";
 import { useAppSelector } from "../redux/hooks";
 import { CartItem, Offer } from "../types";
 import {  useNavigate } from "react-router-dom";
-// ----------------------
-// Type guard for cross offers
+
 const isCrossOffer = (
   offer?: Offer
 ): offer is { type: "cross"; relatedProductId: string; discount: number } =>
   offer?.type === "cross";
-// ----------------------
+
 
 const CartSummary = () => {
   const cartItems = useAppSelector((state) => state.cart.items);
 const navigate = useNavigate()
-  // Function to calculate discount for each item
   const getItemDiscount = (item: CartItem) => {
     const offer = item.offer;
     if (!offer) return 0;
@@ -24,12 +22,12 @@ const navigate = useNavigate()
         return (item.price * item.quantity * offer.value) / 100;
 
       case "bogo":
-        // Buy X get 1 free
+       
         const freeItems = Math.floor(item.quantity / (offer.value + 1));
         return freeItems * item.price;
 
       case "cross":
-        // Cross product discount
+    
         if (isCrossOffer(offer)) {
           const related = cartItems.find(
             (x) => x.id === offer.relatedProductId
@@ -97,5 +95,4 @@ const navigate = useNavigate()
     </div>
   );
 };
-
 export default CartSummary;
