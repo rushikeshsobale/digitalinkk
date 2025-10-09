@@ -8,9 +8,13 @@ export interface Product {
   name: string;
   description: string;
   price: number;
+  quantity?:number;
   offer?: Offer; 
+  isOfferApplicable?:boolean;
 }
 export interface CartItem extends Product {
   quantity: number;
   appliedOffer?: Offer; 
 }
+
+

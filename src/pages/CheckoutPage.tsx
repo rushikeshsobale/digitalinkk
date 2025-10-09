@@ -1,7 +1,6 @@
 // src/pages/CheckoutPage.tsx
 import React, { useState } from "react";
 import { useAppSelector } from "../redux/hooks";
-import { CartItem } from "../types";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
 import CartSummary from "../components/CartSummery";
